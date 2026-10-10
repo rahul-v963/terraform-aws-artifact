@@ -61,6 +61,17 @@ terraform destroy
 
 Review the destruction plan and confirm before proceeding. Ensure any bucket objects and object versions have been removed if necessary.
 
+## Deployment Evidence
+
+Screenshots documenting the deployed infrastructure and validation steps are available here:
+
+[View Terraform and AWS Evidence](docs/screenshots/aws-terraform-evidence.docx)
+
+The evidence includes AWS S3 security configuration, versioning, encryption, lifecycle settings, Terraform state, and GitHub Actions CI validation.
+
+Additional Terraform plan and state verification screenshots demonstrate the infrastructure's current status.
+
+
 ## Future Improvements
 
 - Remote state storage with appropriate locking and access controls
@@ -69,3 +80,4 @@ Review the destruction plan and confirm before proceeding. Ensure any bucket obj
 - Automated infrastructure tests
 - Least-privilege deployment using GitHub Actions OIDC
 - Separate development and production environments
+
